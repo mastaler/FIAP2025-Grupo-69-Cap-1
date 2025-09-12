@@ -111,12 +111,14 @@ projeto-farmtech/
 
 ## 📚 Referências
 - Artigo sobre Agricultura Digital (para resumo): [Link do artigo](https://www.alice.cnptia.embrapa.br/alice/bitstream/doc/1003485/1/CAP8.pdf)
+- Resumo no documento https://github.com/mastaler/FIAP2025-Grupo-69-Cap-1/blob/main/resumo_artigo_vants.docx
 
 ## 👥 Equipe
-- [Nome do Aluno 1]
-- [Nome do Aluno 2]
-- [Nome do Aluno 3]
+- Fabio Mastaler
+- Paulo Martelli
+- Wanderlei Grizolli Junior
 - [Nome do Aluno 4]
+- [Nome do Aluno 5]
 
 ## 📝 Observações
 - O sistema foi desenvolvido para fins educacionais
@@ -124,7 +126,7 @@ projeto-farmtech/
 - Todos os comentários estão em português
 - Uso de IA foi permitido e utilizado com senso crítico
 
-## ⚠️ Importante para Entrega
+## ⚠️ Entrega
 1. **Compactar todos os arquivos em ZIP**:
    - farmtech_sistema.py
    - farmtech_analise.R
@@ -134,11 +136,9 @@ projeto-farmtech/
    - resumo_artigo.pdf (1 página A4)
    - git_comandos.txt
 
-2. **Resumo do Artigo** (fazer separadamente):
-   - Máximo 1 página A4
-   - Fonte Arial 11
-   - Espaçamento 1 entre linhas
-   - Margens 2cm (direita e esquerda)
+2. **Resumo na disciplina de Formação Social**:
+   - Artigo sobre Agricultura Digital (para resumo): [Link do artigo](https://www.alice.cnptia.embrapa.br/alice/bitstream/doc/1003485/1/CAP8.pdf)
+   - Resumo no documento https://github.com/mastaler/FIAP2025-Grupo-69-Cap-1/blob/main/resumo_artigo_vants.docx
 
 ---
 **FarmTech Solutions** - Transformando a agricultura através da tecnologia 🚜🌱
