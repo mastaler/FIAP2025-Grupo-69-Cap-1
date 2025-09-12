@@ -1,0 +1,27 @@
+# ================================
+# LINK DO VÍDEO DE DEMONSTRAÇÃO
+# ================================
+
+# Projeto: FarmTech Solutions - Sistema de Agricultura Digital
+# Disciplina: [Nome da Disciplina]
+# Grupo: [Número do Grupo]
+
+# Link do YouTube (modo não listado):
+https://youtu.be/SUBSTITUIR_PELO_SEU_LINK
+
+# Instruções para gravar o vídeo:
+# 1. Use OBS Studio, Loom, ou grave a tela do celular
+# 2. Duração máxima: 5 minutos
+# 3. Mostre funcionando:
+#    - Sistema Python (todas as opções do menu)
+#    - Análise em R
+#    - (Opcional) Sistema meteorológico
+# 4. Upload no YouTube como "Não listado"
+# 5. Substitua o link acima pelo link real
+
+# Data da gravação: __/__/2024
+# Integrantes presentes na gravação:
+# - 
+# - 
+# - 
+# -

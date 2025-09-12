@@ -1,0 +1,231 @@
+# ================================
+# COMANDOS GIT PARA O PROJETO FARMTECH
+# ================================
+
+# CONFIGURAÇÃO INICIAL (executar uma vez)
+# ----------------------------------------
+
+# 1. Configurar seu nome e email
+git config --global user.name "Seu Nome"
+git config --global user.email "seu.email@example.com"
+
+# 2. Inicializar repositório local
+git init
+
+# 3. Criar arquivo .gitignore
+echo "__pycache__/" > .gitignore
+echo "*.pyc" >> .gitignore
+echo ".Rhistory" >> .gitignore
+echo ".RData" >> .gitignore
+
+# ================================
+# CRIAR REPOSITÓRIO NO GITHUB
+# ================================
+
+# 1. Acesse https://github.com
+# 2. Clique em "New repository"
+# 3. Nome: farmtech-solutions
+# 4. Descrição: Sistema de Agricultura Digital - Projeto FIAP
+# 5. Deixe como público ou privado
+# 6. NÃO inicialize com README (já temos um)
+# 7. Copie o link do repositório
+
+# ================================
+# CONECTAR AO GITHUB
+# ================================
+
+# Adicionar origem remota (substitua URL pelo link do seu repositório)
+git remote add origin https://github.com/SEU_USUARIO/farmtech-solutions.git
+
+# Verificar conexão
+git remote -v
+
+# ================================
+# PRIMEIRO COMMIT
+# ================================
+
+# Adicionar todos os arquivos
+git add .
+
+# Criar primeiro commit
+git commit -m "feat: commit inicial - sistema FarmTech Solutions"
+
+# Enviar para GitHub
+git push -u origin main
+
+# Se der erro, tente:
+git push -u origin master
+
+# ================================
+# WORKFLOW DIÁRIO
+# ================================
+
+# ANTES DE COMEÇAR A TRABALHAR:
+# 1. Atualizar seu repositório local
+git pull origin main
+
+# 2. Criar uma branch para sua tarefa
+git checkout -b feature/nome-da-funcionalidade
+# Exemplos:
+# git checkout -b feature/calculo-area
+# git checkout -b feature/analise-r
+# git checkout -b feature/api-clima
+
+# DURANTE O DESENVOLVIMENTO:
+# 3. Ver status dos arquivos
+git status
+
+# 4. Adicionar arquivos modificados
+git add nome_do_arquivo.py
+# ou adicionar todos:
+git add .
+
+# 5. Fazer commit com mensagem descritiva
+git commit -m "tipo: descrição do que foi feito"
+
+# Tipos de commit:
+# feat: nova funcionalidade
+# fix: correção de bug
+# docs: documentação
+# style: formatação
+# refactor: refatoração de código
+# test: adição de testes
+
+# Exemplos:
+git commit -m "feat: adicionar cálculo de área para café"
+git commit -m "fix: corrigir erro no menu de entrada"
+git commit -m "docs: atualizar README com instruções"
+
+# 6. Enviar branch para GitHub
+git push origin nome-da-sua-branch
+
+# ================================
+# TRABALHO EM EQUIPE
+# ================================
+
+# MERGE (juntar branches):
+# 1. Voltar para branch principal
+git checkout main
+
+# 2. Atualizar branch principal
+git pull origin main
+
+# 3. Fazer merge da sua branch
+git merge feature/nome-da-funcionalidade
+
+# 4. Enviar mudanças
+git push origin main
+
+# RESOLVER CONFLITOS:
+# Se houver conflitos ao fazer pull ou merge:
+# 1. Abra os arquivos com conflito
+# 2. Procure por <<<<<<< HEAD
+# 3. Edite manualmente para resolver
+# 4. Remova as marcações de conflito
+# 5. Adicione e faça commit
+git add .
+git commit -m "fix: resolver conflitos de merge"
+
+# ================================
+# COMANDOS ÚTEIS
+# ================================
+
+# Ver histórico de commits
+git log --oneline
+
+# Ver histórico com gráfico
+git log --graph --oneline --all
+
+# Ver diferenças não commitadas
+git diff
+
+# Ver todas as branches
+git branch -a
+
+# Deletar branch local
+git branch -d nome-da-branch
+
+# Desfazer último commit (mantém mudanças)
+git reset --soft HEAD~1
+
+# Descartar mudanças locais em um arquivo
+git checkout -- nome_do_arquivo.py
+
+# Ver quem modificou cada linha
+git blame nome_do_arquivo.py
+
+# ================================
+# ESTRUTURA DE BRANCHES SUGERIDA
+# ================================
+
+main (ou master)
+├── feature/sistema-python
+│   ├── feature/menu-principal
+│   ├── feature/calculo-area
+│   └── feature/calculo-insumos
+├── feature/analise-r
+│   ├── feature/estatisticas
+│   └── feature/graficos
+└── feature/api-clima
+
+# ================================
+# EXEMPLO DE SESSÃO DE TRABALHO
+# ================================
+
+# João vai trabalhar no cálculo de áreas:
+git pull origin main
+git checkout -b feature/calculo-area
+# ... faz as modificações em farmtech_sistema.py ...
+git add farmtech_sistema.py
+git commit -m "feat: implementar cálculo de área retangular para café"
+git push origin feature/calculo-area
+
+# Maria vai trabalhar na análise R:
+git pull origin main
+git checkout -b feature/analise-estatistica
+# ... cria farmtech_analise.R ...
+git add farmtech_analise.R
+git commit -m "feat: criar análise estatística básica em R"
+git push origin feature/analise-estatistica
+
+# Pedro vai juntar tudo:
+git checkout main
+git pull origin main
+git merge feature/calculo-area
+git merge feature/analise-estatistica
+git push origin main
+
+# ================================
+# BOAS PRÁTICAS
+# ================================
+
+1. Sempre fazer pull antes de começar a trabalhar
+2. Commits pequenos e frequentes
+3. Mensagens de commit claras e descritivas
+4. Uma funcionalidade por branch
+5. Testar antes de fazer merge
+6. Documentar mudanças importantes
+7. Revisar código dos colegas
+8. Manter branch main sempre funcional
+9. Usar .gitignore para arquivos desnecessários
+10. Fazer backup regularmente
+
+# ================================
+# GITHUB FEATURES
+# ================================
+
+# No GitHub vocês podem usar:
+# - Issues: para rastrear tarefas e bugs
+# - Pull Requests: para revisar código antes do merge
+# - Projects: para organizar o trabalho
+# - Wiki: para documentação adicional
+# - Actions: para automação (avançado)
+
+# ================================
+# LINKS ÚTEIS
+# ================================
+
+# Documentação Git: https://git-scm.com/doc
+# GitHub Docs: https://docs.github.com
+# Guia de Markdown: https://guides.github.com/features/mastering-markdown/
+# Git Cheat Sheet: https://education.github.com/git-cheat-sheet-education.pdf
