@@ -115,7 +115,7 @@ projeto-farmtech/
 
 ## 👥 Equipe
 - Fabio Mastaler   RM567153
-- Paulo Martelli   RM
+- Paulo Henrique Prado Martelli   RM567266
 - Wanderlei Grizolli Junior   RM568198
 - Lucas Cariello Massena   RM567530
 - Raul Mauro Sarai de Jesus   RM567329
