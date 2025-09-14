@@ -114,11 +114,11 @@ projeto-farmtech/
 - Resumo no documento https://github.com/mastaler/FIAP2025-Grupo-69-Cap-1/blob/main/resumo_artigo_vants.docx
 
 ## 👥 Equipe
-- Fabio Mastaler
-- Paulo Martelli
-- Wanderlei Grizolli Junior
-- [Nome do Aluno 4]
-- [Nome do Aluno 5]
+- Fabio Mastaler   RM567153
+- Paulo Martelli   RM
+- Wanderlei Grizolli Junior   RM568198
+- Lucas Cariello Massena   RM567530
+- Raul Mauro Sarai de Jesus   RM567329
 
 ## 📝 Observações
 - O sistema foi desenvolvido para fins educacionais
